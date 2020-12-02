@@ -14,14 +14,15 @@
 #include <fstream>  // for std::ifstream
 #include <iostream> // for std::cout
 
-// getTwoEntryProduct : Implementation of the Part 1 objective. 
+// Implementation of the Part 1 objective. 
+// 
 // @param fileName  The .txt file name received from command line input.
 // @param target    The current year and target sum.
 // @return          The product of two entries whose sum is equal to target, or -1.
 int getTwoEntryProduct(std::string fileName, int target) 
 {
-	int entry1, entry2;
-	int inFile2pos = 0;
+	int entry1, entry2; // two integer entries read from the file
+	int inFile2pos = 0; // the position of the second ifstream
 	
 	// open two ifstreams for the indicated file
 	std::ifstream inFile1; inFile1.open(fileName.c_str());
@@ -48,14 +49,15 @@ int getTwoEntryProduct(std::string fileName, int target)
 	
 } // end of getTwoEntryProduct
 
-// getThreeEntryProduct : Implementation of the Part 2 objective. 
+// Implementation of the Part 2 objective. 
+// 
 // @param fileName  The .txt file name received from command line input.
 // @param target    The current year and target sum.
 // @return          The product of two entries whose sum is equal to target, or -1.
 int getThreeEntryProduct(std::string fileName, int target)
 {
-	int entry;
-	int twoEntryProduct;
+	int entry; // an integer entry read from the file
+	int twoEntryProduct; // the product of two integer entries from getTwoEntryProduct
 	
 	// open an ifstream for the indicated file
 	std::ifstream inFile; 
@@ -78,6 +80,7 @@ int getThreeEntryProduct(std::string fileName, int target)
 	
 } // end of getThreeEntryProduct
 
+// for command-line argument execution
 int main(int argc, char *argv[]) 
 {
 	if (argc == 2) {
