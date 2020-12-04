@@ -11,8 +11,8 @@
 // Part 2:
 // "In your expense report, what is the product of the three entries that sum to 2020?"
 
-#include <fstream>  // for std::ifstream
-#include <iostream> // for std::cout
+#include <fstream>  // std::ifstream
+#include <iostream> // std::cout
 
 // Implementation of the Part 1 objective. 
 // 

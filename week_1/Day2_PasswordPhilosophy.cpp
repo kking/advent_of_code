@@ -77,7 +77,8 @@ int getNumValid(std::string fileName, bool isPolicyOne)
 		}
 	}
 	return numValid;
-}
+	
+} // end of getNumValid
 
 // for command-line argument execution
 int main(int argc, char *argv[])
