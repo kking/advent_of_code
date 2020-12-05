@@ -1,5 +1,5 @@
 // Advent of Code 2020, Day 3: Toboggan Trajectory
-// kking, 12/03/20
+// kking, 12/04/20
 
 // Part 1:
 // "... you set off toward the airport. While travel by toboggan might be easy, it's certainly not 
